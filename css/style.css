@@ -1,0 +1,133 @@
+.jadwal-sholat {
+    background-color: #8DACF4;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.jadwal-sholat__inner {
+    padding: 20px;
+}
+.jadwal-sholat__inner-top {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.jadwal-sholat__inner-main {
+    margin: -10px;
+}
+.jadwal-sholat__inner-main table {
+    width: 100%;
+    text-align: center;
+    font-family: Lato, "Open Sans", Serif;
+    border-collapse: collapse;
+    margin: 0px;
+    display: table;
+
+}
+.jadwal-sholat__inner-main thead td {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+
+}
+.jadwal-sholat__inner-main tbody td {
+    color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.justify-content-around {
+    -webkit-justify-content: space-around!important;
+    -ms-flex-pack: distribute!important;
+    justify-content: space-around!important;
+}
+
+.jadwal-sholat .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.entry__meta-kanal {
+    font-family: Lato, "Open Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #212121;
+}
+
+.jadwal-sholat select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    padding-left: 12px;
+    
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+.jadwal-sholat input, select, textarea {
+    height: 42px;
+    border: 1px solid #ebeeef;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 0 12px;
+    -webkit-transition: border-color .3s ease-in-out,background-color .3s ease-in-out;
+    -moz-transition: border-color .3s ease-in-out,background-color .3s ease-in-out;
+    -ms-transition: border-color .3s ease-in-out,background-color .3s ease-in-out;
+    -o-transition: border-color .3s ease-in-out,background-color .3s ease-in-out;
+    transition: border-color .3s ease-in-out,background-color .3s ease-in-out;
+    font-size: 13px;
+    font-family: Lato,"Open Sans",sans-serif;
+}
+
+.jadwal-sholat table td, table th{
+    padding:0 5px 0 5px;
+    border-bottom: none;
+}
+
+
+@media only screen and (min-width :360px) and (max-device-width :768px){
+    .jadwal-sholat {
+        background-color: #8DACF4;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .entry__meta-kanal {
+        font-family: Lato, "Open Sans", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #212121;
+    }
+    .jadwal-sholat__inner-main thead td {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+
+    }
+    .jadwal-sholat__inner-main tbody td {
+        color: #212121;
+        font-weight: 600;
+        font-size: 12px;
+        text-align: center;
+        line-height: 1.5;   
+    }
+    .jadwal-sholat__inner {
+        padding: 10px;
+    }
+
+}
