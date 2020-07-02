@@ -11,17 +11,18 @@ Author URI: https://adisucipto.
 // First register resources with init 
 function mits_shortcode_resource() {
 	wp_register_script("mits-shortcode-script", plugin_dir_url(__FILE__)."js/jadwal.js", array('jquery'));
-	wp_register_style("mits-shortcode-style", plugin_dir_url(__FILE__)."css/style.css", array());
+	wp_register_style("mits-shortcode-style", plugin_dir_url(__FILE__)."css/jadwal.css", array());
 }
-add_action( 'init', 'mits_shortcode_resource' );
+add_action( 'wp_enqueue_scripts', 'mits_shortcode_resource' );
 
 add_shortcode( 'mits_shortcode_jadwal', 'mits_jadwal_shortcode' );
 function mits_jadwal_shortcode() {
 	
-	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script("mits-shortcode-script",array('jquery') , '1.0', true);
+	
+	//wp_enqueue_script( 'jquery' );
+	wp_enqueue_script("mits-shortcode-script");
 	wp_enqueue_style("mits-shortcode-style");
-
+	
 	$jadwal ="";
 
 	$jadwal .= '<div class="jadwal-sholat">';
